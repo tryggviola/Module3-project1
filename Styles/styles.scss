@@ -1,0 +1,176 @@
+// VARIABLES
+
+$primred: #f37070;
+$primyellow: #f3ee70;
+$textcolor: black;
+$gutter: 54px;
+
+
+// Here I used Variables. 
+body {
+	background-color: $primyellow;
+	
+  color: $textcolor;
+  font-family: 'Roboto', sans-serif;
+	
+  padding: 47px $gutter;
+  margin:0px;
+}
+
+// Here I used VARIABLES and NESTINGS
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: row wrap;
+
+	border-bottom: 5px solid black;
+
+	img {
+		height: 60px;
+	}
+
+	.nav {
+		display: inherit;
+		align-items: center;
+
+		column-gap: 20px;
+
+		font-size: 32px;
+
+		&_buybox {
+			background-color: $primred;
+
+			font-weight: bolder;
+
+			margin: -30px 0;
+			padding: 50px 0;
+
+			span {
+				padding: 20px 30px;
+
+				border-bottom: 5px solid black;
+			}
+		}
+	}
+}
+// When the site is less then 900px the header will align it self better. 
+@media (max-width: 900px) {
+  header {
+    display: flex;
+
+    img {
+      height: 120px;
+    }
+
+    .nav {
+      flex-direction: column;
+      align-items: flex-end;
+
+      font-size: 24px;
+
+      span {
+        border-bottom: 0px;
+        padding: 0px;
+      }
+
+      &_buybox {
+        background-color: $primyellow;
+
+        margin: auto;
+        padding: 0px;
+
+        font-weight: normal;
+      }
+
+    }
+  }
+}
+
+// Here I used VARIABLES and NESTING
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	row-gap: 20px;
+	column-gap: 50px;
+	margin-top: 146px;
+
+	&_list {
+		display: inherit;
+		width: 480px;
+
+		margin-left: -$gutter;
+		padding-left: $gutter;
+		padding-top: 50px;
+
+		background-color: $primred;
+		font-size: 40px;
+		font-weight: bolder;
+
+		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.second_list {
+		display: inherit;
+		grid-row-start: 2;
+
+		font-size: 32px;
+	}
+
+	.barcode {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		grid-column-start: 3;
+		grid-column-end: 6;
+
+		img {
+			padding-bottom: 30px;
+			border-bottom: 5px solid black;
+		}
+
+		&_title {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+
+			font-size: 32px;
+		}
+
+		&_wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			max-width: 900px;
+		}
+	}
+}
+
+//When the site is less then 1118px the content will align it self better.
+
+@media (max-width: 1118px) {
+  .main {
+
+    .barcode {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      margin-top: 100px;
+    }
+    
+    &_list {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      width: auto;
+      margin-right: -54px;
+      
+  
+    }
+  }
+}
+

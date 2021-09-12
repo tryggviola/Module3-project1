@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Styles/styles.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <title>BAR//CODE</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="00_assets/SVG/Asset 1.svg" href="logo" />
+			</div>
+			<div class="nav">
+				<span>VENUE</span>
+				<span>ABOUT</span>
+				<span>CONTACT</span>
+				<div class="nav_buybox">
+					<span>BUY TICKET</span>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main_list">
+				<span>Aron Can</span>
+				<span>Birnir</span>
+				<span>Herra Hnetusmjör</span>
+				<span>Alvia Islandia</span>
+				<span>Floni</span>
+			</div>
+			<div class="barcode">
+				<div class="barcode_wrapper">
+					<img src="00_assets/SVG/Asset 2.svg" href="big logo barcode" />
+					<div class="barcode_title">
+  
+						<p><strong>BAR//CODE</strong> 26 OKT // REYKJAVÍK</p>
+					</div>
+				</div>
+			</div>
+			<div class="second_list">
+				<span>ClubDub</span>
+				<span>Ra:tio</span>
+				<span>Mambakid</span>
+				<span>RAKEL</span>
+				<span>Ingi Bauer</span>
+				<span>HUGÓ</span>
+				<span>CaseTone</span>
+				<span>SZK</span>
+				<span>Unge Ferrari</span>
+				<span>Whyrun</span>
+			</div>
+		</div>
+	</body>
+</html>
